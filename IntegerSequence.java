@@ -21,10 +21,12 @@ public class Range implements IntegerSequence {
         return (Math.abs(end - start) + 1);
     }
     public boolean hasNext() {
-
+        return (current < Math.abs(end - start));
     }
 
     //@throws NoSuchElementException
-    public int next(){    }
+    public int next() {
+
+    }
 
 }
