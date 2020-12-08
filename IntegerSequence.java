@@ -15,10 +15,14 @@ public class Range implements IntegerSequence {
         current = 0;
     }
     public void reset() {
+        current = 0;
+    }
+    public int length() {
+        return (Math.abs(end - start) + 1);
+    }
+    public boolean hasNext() {
 
     }
-    public int length(){  }
-    public boolean hasNext(){  }
 
     //@throws NoSuchElementException
     public int next(){    }
