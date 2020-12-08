@@ -8,5 +8,9 @@ public class Tester {
         }
         System.out.println();
 
+        System.out.println(r.length());
+        System.out.println(r.hasNext());
+        r.reset();
+        System.out.println(r.next());
     }
 }
