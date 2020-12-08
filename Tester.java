@@ -22,15 +22,16 @@ public class Tester {
         while(as.hasNext()){
             System.out.print(as.next()+", ");
         }
+        System.out.println();
 
         System.out.println("----------------------------------");
 
-        IntegerSequence r = new Range(10,20);
-        IntegerSequence as = new ArraySequence(r);
+        IntegerSequence test1 = new Range(10,20);
+        IntegerSequence test2 = new ArraySequence(test1);
 
         System.out.println("ArraySequence(seq):");
-        while(as.hasNext()){
-            System.out.print(as.next()+", ");
+        while(test2.hasNext()){
+            System.out.print(test2.next()+", ");
         }
         System.out.println();
     }
